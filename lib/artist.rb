@@ -11,12 +11,6 @@ class Artist
     @songs << song
   end
 
-  def self.new_(name)
-    artist = self.new
-    artist.name = name
-    artist
-  end
-
   def self.find_or_create_by_name(name)
     @@all.index { |artist| artist.name == name } || self.new(name)
   end
