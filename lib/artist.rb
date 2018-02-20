@@ -14,7 +14,7 @@ class Artist
   def self.new_by_name(name)
     artist = self.new
     artist.name = name
-    song
+    artist
   end
 
   def self.find(name)
