@@ -13,4 +13,7 @@ class Artist
   def save
     @all
   end
+
+  def print
+  end
 end
