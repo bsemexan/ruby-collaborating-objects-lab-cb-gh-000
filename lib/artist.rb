@@ -11,7 +11,7 @@ class Artist
     @songs << song
   end
 
-  def self.new_by_name(name)
+  def self.new(name)
     artist = self.new
     artist.name = name
     artist
@@ -22,7 +22,7 @@ class Artist
   end
 
   def self.create(name)
-    @@all.detect{ |song| song.name == name }
+    @@all.
   end
 
   def self.find_or_create_by_name(name)
