@@ -23,6 +23,7 @@ class Artist
     @@all.index { |artist| artist.name == name } || self.new(name)
   end
 
-  def print
+  def print_song
+    @songs.each { |song| puts song.name }
   end
 end
