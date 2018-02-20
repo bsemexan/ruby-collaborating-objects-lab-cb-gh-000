@@ -11,7 +11,7 @@ class Artist
     @songs << song
   end
 
-  def self.new(name)
+  def self.new_(name)
     artist = self.new
     artist.name = name
     artist
@@ -22,7 +22,7 @@ class Artist
   end
 
   def self.create(name)
-    @@all.
+    @@all.new_
   end
 
   def self.find_or_create_by_name(name)
