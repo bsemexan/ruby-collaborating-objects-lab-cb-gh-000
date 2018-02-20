@@ -7,7 +7,7 @@ class Song
 
   def self.new_by_filename(filename)
     file = self.new
-    file.name = filename
+    file.filename = name
     file
  end
 end
