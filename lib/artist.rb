@@ -17,7 +17,7 @@ class Artist
     artist
   end
 
-  def self.find(name)
+  def self.find_(name)
     @@all.detect{ |artist| artist.name == name }
   end
 
@@ -26,7 +26,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    @@all.index { |artist| artist.name == name } || self.new(name)
+    self.find_(name) || self.create_by_name(name)
   end
 
   def save
