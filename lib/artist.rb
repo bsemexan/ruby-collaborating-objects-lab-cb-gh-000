@@ -7,15 +7,11 @@ class Artist
     @songs = []
   end
 
-  def songs
-    @songs
-  end
-
   def add_song(song)
     @songs << song
   end
 
-  
+
 
   def self.find_or_create_by_name(name)
     @@all.index { |artist| artist.name == name } || self.new(name)
