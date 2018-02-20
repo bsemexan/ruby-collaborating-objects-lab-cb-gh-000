@@ -17,7 +17,7 @@ class Artist
   end
 
   def save
-    @all << self.artist
+    @all
   end
 
   def print
