@@ -15,6 +15,7 @@ class Song
     artist = Artist.new.file[1]
     artits.songs << song
     song.artist = artist
-    file
+    artist.save
+    song
  end
 end
